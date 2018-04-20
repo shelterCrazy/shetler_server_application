@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <artifactId>shelter.server.application</artifactId>
+    <groupId>shelter.server.application</groupId>
+    <version>1.0</version>
+    <packaging>war</packaging>
+    <modelVersion>4.0.0</modelVersion>
+
+    <build>
+        <finalName>pm-web</finalName>
+        <plugins>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>./WebRoot/WEB-INF/classes</directory>
+                        </fileset>
+                        <fileset>
+                            <directory>./WebRoot/WEB-INF/lib</directory>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
