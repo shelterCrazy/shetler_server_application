@@ -1,4 +1,5 @@
-import com.shelter.service.AdeptPool;
+package com.shelter.service;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class runSpringBoot {
 
     public static void main(String[] args) {
-        SpringApplication.run(AdeptPool.class);
+        SpringApplication.run(runSpringBoot.class, args);
     }
 
 }

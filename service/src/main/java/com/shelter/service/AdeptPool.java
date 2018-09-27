@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.*;
 @EnableAutoConfiguration
 public class AdeptPool {
 
+
+
     private static final Logger logger = LoggerFactory.getLogger(AdeptPool.class);
 
     @RequestMapping("/adeptPool/test")
@@ -27,4 +29,7 @@ public class AdeptPool {
         map.put("msg", "hello word");
         return map;
     }
+
+
+
 }

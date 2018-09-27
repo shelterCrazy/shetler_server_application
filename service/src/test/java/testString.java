@@ -4,6 +4,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @EnableAutoConfiguration
+//@SpringBootTest
 public class testString {
 
     Logger logger = LoggerFactory.getLogger(testString.class);
@@ -28,6 +31,7 @@ public class testString {
 
         SpringApplication.run(testString.class);
     }
+
 
     @RequestMapping("/springIoTest")
     public ModelMap springIoTest(){

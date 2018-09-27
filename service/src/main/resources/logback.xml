@@ -6,10 +6,10 @@
     </layout>
   </appender>
   
-  <logger name="com.base22" level="debug"/>
+  <logger name="com.shelter" level="debug"/>
   
 
-  <root level="debug">
+  <root level="info">
     <appender-ref ref="STDOUT" />
   </root>
 </configuration>
